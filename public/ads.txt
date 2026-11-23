@@ -1,3 +1,4 @@
 # ergo-fit has no authorized advertising sellers in this build.
 # Replace this commented example with the exact entry supplied by AdSense when authorized.
 # google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-2824959172169836, DIRECT, f08c47fec0942fa0
