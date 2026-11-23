@@ -1,0 +1,243 @@
+[
+  {
+    "affiliateKey": "aeron-a",
+    "name": "Herman Miller Aeron Size A",
+    "category": "chair",
+    "widthInches": 27.5,
+    "depthInches": 27.5,
+    "priceTier": "premium",
+    "bestFor": "Lower seat-height targets",
+    "sources": [
+      "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/specs/"
+    ],
+    "minSeatHeight": 14.4,
+    "maxSeatHeight": 19.3,
+    "minSeatDepth": 16,
+    "maxSeatDepth": 16,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "Height-adjustable arms",
+    "aeronSize": "Size A"
+  },
+  {
+    "affiliateKey": "aeron-b",
+    "name": "Herman Miller Aeron Size B",
+    "category": "chair",
+    "widthInches": 28.3,
+    "depthInches": 28.3,
+    "priceTier": "premium",
+    "bestFor": "Midrange fixed seat depth",
+    "sources": [
+      "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/specs/"
+    ],
+    "minSeatHeight": 14.8,
+    "maxSeatHeight": 22.8,
+    "minSeatDepth": 17,
+    "maxSeatDepth": 17,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "Height-adjustable arms",
+    "aeronSize": "Size B"
+  },
+  {
+    "affiliateKey": "aeron-c",
+    "name": "Herman Miller Aeron Size C",
+    "category": "chair",
+    "widthInches": 28.3,
+    "depthInches": 28.3,
+    "priceTier": "premium",
+    "bestFor": "Deeper seat-pan targets",
+    "sources": [
+      "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/specs/"
+    ],
+    "minSeatHeight": 15.8,
+    "maxSeatHeight": 22.8,
+    "minSeatDepth": 18.5,
+    "maxSeatDepth": 18.5,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "Height-adjustable arms",
+    "aeronSize": "Size C"
+  },
+  {
+    "affiliateKey": "sayl",
+    "name": "Herman Miller Sayl",
+    "category": "chair",
+    "widthInches": 24.5,
+    "depthInches": 19.75,
+    "priceTier": "premium",
+    "bestFor": "Low seat height with adjustable depth",
+    "sources": [
+      "https://www.hermanmiller.com/content/dam/hermanmiller/documents/pricing/PB_SYL.pdf"
+    ],
+    "minSeatHeight": 15,
+    "maxSeatHeight": 19,
+    "minSeatDepth": 16,
+    "maxSeatDepth": 18,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "Suspension back, low cylinder, adjustable-depth seat"
+  },
+  {
+    "affiliateKey": "leap",
+    "name": "Steelcase Leap",
+    "category": "chair",
+    "widthInches": 27,
+    "depthInches": 24.75,
+    "priceTier": "premium",
+    "bestFor": "Broad seat-depth adjustment",
+    "sources": [
+      "https://www.steelcase.com/content/uploads/2024/02/Leap-Spec-Guide-1.pdf"
+    ],
+    "minSeatHeight": 15.5,
+    "maxSeatHeight": 20.5,
+    "minSeatDepth": 15.75,
+    "maxSeatDepth": 18.75,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "Work chair with standard cylinder"
+  },
+  {
+    "affiliateKey": "series-1",
+    "name": "Steelcase Series 1",
+    "category": "chair",
+    "widthInches": 27,
+    "depthInches": 23.75,
+    "priceTier": "midrange",
+    "bestFor": "Compact adjustable seating",
+    "sources": [
+      "https://www.steelcase.com/content/uploads/2024/02/Series-1-Spec-Guide.pdf"
+    ],
+    "minSeatHeight": 16.5,
+    "maxSeatHeight": 21.5,
+    "minSeatDepth": 15.5,
+    "maxSeatDepth": 17.75,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "Work chair with arms and standard cylinder"
+  },
+  {
+    "affiliateKey": "uplift-commercial-42x24",
+    "name": "UPLIFT V2 Commercial 42x24",
+    "category": "standing-desk",
+    "widthInches": 42,
+    "depthInches": 24,
+    "priceTier": "midrange",
+    "bestFor": "Narrow rooms with a clamp-mounted display",
+    "sources": [
+      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+    ],
+    "minSeatHeight": null,
+    "maxSeatHeight": null,
+    "minSeatDepth": null,
+    "maxSeatDepth": null,
+    "minDeskHeight": 22.6,
+    "maxDeskHeight": 48.7,
+    "configuration": "2-leg C-frame with 1-inch desktop and 24-inch feet"
+  },
+  {
+    "affiliateKey": "uplift-commercial-48x24",
+    "name": "UPLIFT V2 Commercial 48x24",
+    "category": "standing-desk",
+    "widthInches": 48,
+    "depthInches": 24,
+    "priceTier": "midrange",
+    "bestFor": "Shallow rooms with a clamp-mounted display",
+    "sources": [
+      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+    ],
+    "minSeatHeight": null,
+    "maxSeatHeight": null,
+    "minSeatDepth": null,
+    "maxSeatDepth": null,
+    "minDeskHeight": 22.6,
+    "maxDeskHeight": 48.7,
+    "configuration": "2-leg C-frame with 1-inch desktop and 24-inch feet"
+  },
+  {
+    "affiliateKey": "uplift-commercial-48x30",
+    "name": "UPLIFT V2 Commercial 48x30",
+    "category": "standing-desk",
+    "widthInches": 48,
+    "depthInches": 30,
+    "priceTier": "midrange",
+    "bestFor": "Lower seated targets with a deep work surface",
+    "sources": [
+      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+    ],
+    "minSeatHeight": null,
+    "maxSeatHeight": null,
+    "minSeatDepth": null,
+    "maxSeatDepth": null,
+    "minDeskHeight": 22.6,
+    "maxDeskHeight": 48.7,
+    "configuration": "2-leg C-frame with 1-inch desktop and 27.6-inch feet"
+  },
+  {
+    "affiliateKey": "uplift-standard-60x30",
+    "name": "UPLIFT V2 Standard 60x30",
+    "category": "standing-desk",
+    "widthInches": 60,
+    "depthInches": 30,
+    "priceTier": "midrange",
+    "bestFor": "Higher standing targets and wide work surfaces",
+    "sources": [
+      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+    ],
+    "minSeatHeight": null,
+    "maxSeatHeight": null,
+    "minSeatDepth": null,
+    "maxSeatDepth": null,
+    "minDeskHeight": 25.3,
+    "maxDeskHeight": 50.9,
+    "configuration": "2-leg C-frame with 1-inch desktop and 27.6-inch feet"
+  },
+  {
+    "affiliateKey": "ergotron-lx",
+    "name": "Ergotron LX Desk Monitor Arm",
+    "category": "monitor-arm",
+    "widthInches": 6,
+    "depthInches": 25.6,
+    "priceTier": "midrange",
+    "bestFor": "Reclaiming desk surface on compact setups",
+    "sources": [
+      "https://media.ergotron.com/reserved/resources/dim2-056-orig.pdf",
+      "https://media.ergotron.com/reserved/resources/05-056-ea-orig.pdf"
+    ],
+    "minSeatHeight": null,
+    "maxSeatHeight": null,
+    "minSeatDepth": null,
+    "maxSeatDepth": null,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "45-241-224, 2-piece clamp; top-view arm envelope at full extension",
+    "maxMonitorInches": 34,
+    "minMonitorWeightLbs": 7,
+    "maxMonitorWeightLbs": 25
+  },
+  {
+    "affiliateKey": "kensington-solemate-plus",
+    "name": "Kensington SmartFit SoleMate Plus",
+    "category": "footrest",
+    "widthInches": 17.72,
+    "depthInches": 13.78,
+    "priceTier": "budget",
+    "bestFor": "Supporting feet at an elevated seating position",
+    "sources": [
+      "https://www.kensington.com/cs-cz/p/produkty/ergonomie/op%C4%9Brky-nohou-a-podp%C4%9Bry-zad/op%C4%9Brka-nohou-smartfit-solemate-plus/"
+    ],
+    "minSeatHeight": null,
+    "maxSeatHeight": null,
+    "minSeatDepth": null,
+    "maxSeatDepth": null,
+    "minDeskHeight": null,
+    "maxDeskHeight": null,
+    "configuration": "56146; platform dimensions converted from 450 × 350 mm",
+    "minFootrestHeight": 3.5,
+    "maxFootrestHeight": 5
+  }
+]

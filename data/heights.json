@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "4-ft-10-inch",
+    "heightInches": 58,
+    "imperialLabel": "4′10″",
+    "metricLabel": "147.5 cm",
+    "postureNote": "Start with feet flat and the seat fully lowered. A high seat can force you to perch instead of using the backrest.",
+    "deskHighlight": "Prioritize the lowest usable desktop setting and measure any keyboard surface with its mat installed.",
+    "chairHighlight": "Start with a low cylinder and a short seat pan. Check the seat front clears the backs of both knees."
+  },
+  {
+    "slug": "4-ft-11-inch",
+    "heightInches": 59,
+    "imperialLabel": "4′11″",
+    "metricLabel": "150 cm",
+    "postureNote": "Sit back before checking your feet. Sliding forward to reach the floor changes the effective seat depth.",
+    "deskHighlight": "Measure whether a low keyboard tray can lower both keyboard and mouse while leaving knee space.",
+    "chairHighlight": "Check the advertised cylinder configuration and measure seat height at its lowest loaded position."
+  },
+  {
+    "slug": "5-ft-0-inch",
+    "heightInches": 60,
+    "imperialLabel": "5′0″",
+    "metricLabel": "152.5 cm",
+    "postureNote": "Check whether reaching your keyboard lifts your shoulders after you set the chair low enough to support your feet.",
+    "deskHighlight": "A low sit-stand frame can be more useful than a higher frame with a large travel range.",
+    "chairHighlight": "Check the fixed pan against your actual thigh length. A compact size label alone cannot establish fit."
+  },
+  {
+    "slug": "5-ft-1-inch",
+    "heightInches": 61,
+    "imperialLabel": "5′1″",
+    "metricLabel": "155 cm",
+    "postureNote": "Set seat depth before moving the armrests. You should be able to use the backrest with space behind the knees.",
+    "deskHighlight": "Compare the work surface minimum including the top thickness and any keyboard tray hardware.",
+    "chairHighlight": "Look for a shallow functional pan and test whether the armrests lower enough to let you pull in."
+  },
+  {
+    "slug": "5-ft-2-point-5-inch",
+    "heightInches": 62.5,
+    "imperialLabel": "5′2.5″",
+    "metricLabel": "159 cm",
+    "postureNote": "A change in footwear can change where your feet rest and where your elbows meet the desk.",
+    "deskHighlight": "Check the lowest working keyboard height barefoot and in your usual indoor shoes.",
+    "chairHighlight": "Test both the low-cylinder range and depth adjustment. Ensure a footrest would leave the knees clear."
+  },
+  {
+    "slug": "5-ft-4-inch",
+    "heightInches": 64,
+    "imperialLabel": "5′4″",
+    "metricLabel": "162.5 cm",
+    "postureNote": "Keep the mouse beside the keyboard while checking elbow height. Reaching sideways can raise one shoulder.",
+    "deskHighlight": "Allow room for both input devices on any lowered surface. Measure the mouse surface at the same height.",
+    "chairHighlight": "Try a small depth adjustment while keeping full back contact and avoiding pressure behind the knees."
+  },
+  {
+    "slug": "5-ft-5-inch",
+    "heightInches": 65,
+    "imperialLabel": "5′5″",
+    "metricLabel": "165 cm",
+    "postureNote": "Check seat fit with the chair in the upright position and again in your normal working recline.",
+    "deskHighlight": "A center drawer or deep apron can reduce usable knee space even when desktop height looks right.",
+    "chairHighlight": "Check how far the chair rolls in with its arms lowered and your feet still flat."
+  },
+  {
+    "slug": "5-ft-6-inch",
+    "heightInches": 66,
+    "imperialLabel": "5′6″",
+    "metricLabel": "167.5 cm",
+    "postureNote": "Set your usual shoe allowance before choosing the first desk preset. Compare it with your barefoot setting.",
+    "deskHighlight": "Confirm the frame covers both elbow targets with the actual desktop installed.",
+    "chairHighlight": "Look for a cylinder range that covers your seated target with room to adjust in either direction."
+  },
+  {
+    "slug": "5-ft-7-inch",
+    "heightInches": 67,
+    "imperialLabel": "5′7″",
+    "metricLabel": "170 cm",
+    "postureNote": "Keep your elbows close while testing keyboard reach. Moving the monitor forward should not pull the keyboard away.",
+    "deskHighlight": "With a shallow top, measure from your eyes to the screen face and allow movement at the monitor mount.",
+    "chairHighlight": "Compare the usable seat range while seated against the manufacturer figure for the exact cylinder."
+  },
+  {
+    "slug": "5-ft-8-inch",
+    "heightInches": 68,
+    "imperialLabel": "5′8″",
+    "metricLabel": "172.5 cm",
+    "postureNote": "Use your measured seat depth if your leg proportions differ from the height-based estimate.",
+    "deskHighlight": "Check the desk reaches your seated keyboard height without trapping your thighs beneath a controller or cable tray.",
+    "chairHighlight": "Compare the published functional depth on adjustable chairs with the usable depth of a fixed-pan model."
+  },
+  {
+    "slug": "5-ft-9-inch",
+    "heightInches": 69,
+    "imperialLabel": "5′9″",
+    "metricLabel": "175.5 cm",
+    "postureNote": "For an average-height starting profile, check elbow and eye height separately. Torso and leg proportions still matter.",
+    "deskHighlight": "Start by checking the low end of an adjustable desk range before comparing advertised maximums.",
+    "chairHighlight": "Test more than one fixed shell if your depth estimate falls near a sizing cutoff."
+  },
+  {
+    "slug": "5-ft-10-inch",
+    "heightInches": 70,
+    "imperialLabel": "5′10″",
+    "metricLabel": "178 cm",
+    "postureNote": "Reset seat height after changing seat depth. Your contact with the backrest can shift with the slider setting.",
+    "deskHighlight": "Compare the seated target against the keyboard surface on a fixed desk, including a thick keyboard if you use one.",
+    "chairHighlight": "Aim for supported thighs and room behind the knees. Verify the pan can reach your setting without using the end stop."
+  },
+  {
+    "slug": "5-ft-11-inch",
+    "heightInches": 71,
+    "imperialLabel": "5′11″",
+    "metricLabel": "180.5 cm",
+    "postureNote": "Check your seated line of sight while looking straight ahead with your head level and your back supported.",
+    "deskHighlight": "Choose a frame that reaches both positions with equipment loaded, then set the screen separately.",
+    "chairHighlight": "Try the chair with armrests adjusted low enough that your elbows can rest close to your sides."
+  },
+  {
+    "slug": "6-ft-0-inch",
+    "heightInches": 72,
+    "imperialLabel": "6′0″",
+    "metricLabel": "183 cm",
+    "postureNote": "Practice switching posture without adjusting your chair just to reach the worktop. Let the desk move to meet your elbows.",
+    "deskHighlight": "Measure the standing surface with relaxed shoulders. Check the monitor cable has slack at the highest preset.",
+    "chairHighlight": "Compare the seat-depth range to the space you need behind the knees in both upright and supported recline."
+  },
+  {
+    "slug": "6-ft-1-inch",
+    "heightInches": 73,
+    "imperialLabel": "6′1″",
+    "metricLabel": "185.5 cm",
+    "postureNote": "Check under-desk room while moving your feet and shifting position. A static knee check can miss frame obstructions.",
+    "deskHighlight": "Measure floor-to-obstruction at the crossbar, drawer or controller, as well as floor-to-top.",
+    "chairHighlight": "Confirm that enough thigh is supported when seated back, and check where lumbar support contacts your back."
+  },
+  {
+    "slug": "6-ft-2-inch",
+    "heightInches": 74,
+    "imperialLabel": "6′2″",
+    "metricLabel": "188 cm",
+    "postureNote": "A longer thigh may need a deeper pan even if a standard cylinder reaches the right seat height.",
+    "deskHighlight": "Check desktop maximum at your standing keyboard position with the desk feet leveled.",
+    "chairHighlight": "Evaluate deep seat settings and backrest height separately. Keep clearance behind the knee."
+  },
+  {
+    "slug": "6-ft-3-inch",
+    "heightInches": 75,
+    "imperialLabel": "6′3″",
+    "metricLabel": "190.5 cm",
+    "postureNote": "Check desk height standing in your usual shoes with arms relaxed. Shoulder shrugging can hide a worktop that is too high.",
+    "deskHighlight": "Measure the standing target before choosing a frame and confirm the monitor can rise independently.",
+    "chairHighlight": "Compare standard and tall cylinders by their actual ranges and check that the lowest setting remains usable."
+  },
+  {
+    "slug": "6-ft-4-inch",
+    "heightInches": 76,
+    "imperialLabel": "6′4″",
+    "metricLabel": "193 cm",
+    "postureNote": "Check the seated and standing views of the same display. A stand that fits one position may need resetting in the other.",
+    "deskHighlight": "Confirm both desktop travel and under-top knee clearance, especially around a front apron or tray.",
+    "chairHighlight": "Verify seat depth and cylinder height independently. A high cylinder cannot compensate for a short pan."
+  },
+  {
+    "slug": "6-ft-5-point-5-inch",
+    "heightInches": 77.5,
+    "imperialLabel": "6′5.5″",
+    "metricLabel": "197 cm",
+    "postureNote": "Check that your thighs clear the desk while rolling in and that you can use the backrest without perching.",
+    "deskHighlight": "At the standing end of the range, raise the desk with the full load and check cables and frame movement.",
+    "chairHighlight": "Try a deeper pan with enough room behind the knees. Check armrest and backrest travel for your torso."
+  },
+  {
+    "slug": "6-ft-7-inch",
+    "heightInches": 79,
+    "imperialLabel": "6′7″",
+    "metricLabel": "200.5 cm",
+    "postureNote": "Measure your actual standing elbow height. A height-only estimate can miss a long or short torso.",
+    "deskHighlight": "Compare the maximum with the top and leveling feet installed. Check monitor lift before buying a frame.",
+    "chairHighlight": "Check the chair’s deep-pan setting and tall cylinder separately. Test the seated desk clearance before ordering."
+  }
+]

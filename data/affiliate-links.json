@@ -1,0 +1,62 @@
+{
+  "aeron-a": {
+    "url": "https://example.com/affiliate/aeron-a",
+    "merchant": "Herman Miller",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "aeron-b": {
+    "url": "https://example.com/affiliate/aeron-b",
+    "merchant": "Herman Miller",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "aeron-c": {
+    "url": "https://example.com/affiliate/aeron-c",
+    "merchant": "Herman Miller",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "sayl": {
+    "url": "https://example.com/affiliate/sayl",
+    "merchant": "Herman Miller",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "leap": {
+    "url": "https://example.com/affiliate/leap",
+    "merchant": "Steelcase",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "series-1": {
+    "url": "https://example.com/affiliate/series-1",
+    "merchant": "Steelcase",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "uplift-commercial-42x24": {
+    "url": "https://example.com/affiliate/uplift-commercial-42x24",
+    "merchant": "UPLIFT Desk",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "uplift-commercial-48x24": {
+    "url": "https://example.com/affiliate/uplift-commercial-48x24",
+    "merchant": "UPLIFT Desk",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "uplift-commercial-48x30": {
+    "url": "https://example.com/affiliate/uplift-commercial-48x30",
+    "merchant": "UPLIFT Desk",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "uplift-standard-60x30": {
+    "url": "https://example.com/affiliate/uplift-standard-60x30",
+    "merchant": "UPLIFT Desk",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "ergotron-lx": {
+    "url": "https://example.com/affiliate/ergotron-lx",
+    "merchant": "Ergotron",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  },
+  "kensington-solemate-plus": {
+    "url": "https://example.com/affiliate/kensington-solemate-plus",
+    "merchant": "Kensington",
+    "disclosureLabel": "We may earn a commission if you buy through this link."
+  }
+}
