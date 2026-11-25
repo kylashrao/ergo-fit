@@ -17,6 +17,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased">
       <head>
+        <meta name="p:domain_verify" content="d53754ec0676d559f5613d78e85a771a" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2824959172169836"
