@@ -14,7 +14,7 @@ Copy `.env.example` to `.env.local` for local verification. On Vercel, set the c
 
 - `NEXT_PUBLIC_SITE_URL` supplies the canonical origin for page metadata, structured data, the sitemap, and robots.txt. The local fallback is `https://ergo-fit.example`.
 - `SITE_OPERATOR` and `SITE_CONTACT_EMAIL` supply the public identity and email shown on the trust pages. Set both for production.
-- Affiliate destinations belong in `data/affiliate-links.json`. Reserved example URLs are replaced with links to manufacturer specs on public cards.
+- Affiliate destinations belong in `data/affiliate-links.json`, grouped by program and keyed by the product’s existing `affiliateKey`. A `null` tracking URL indicates that a link is missing. Set a program to `approved` and enter the partner-issued HTTPS URL for each exact product configuration after confirming eligibility for this site. If a network supplies the URL, generate it through the approved property in the partner dashboard. Keep `utmParams` empty unless the program permits adding UTMs to its links. Unavailable affiliate links fall back to manufacturer specs.
 
 ## AdSense readiness
 

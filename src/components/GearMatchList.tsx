@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { getAffiliateLink, matchGear } from "@/lib/catalog";
+import { getGearDestination } from "@/lib/affiliate-links";
+import { matchGear } from "@/lib/catalog";
+import GearProductLink from "./GearProductLink";
 import type { ErgoFit } from "@/lib/ergoMath";
 import { formatLength, type UnitSystem } from "@/lib/setupDisplay";
 
@@ -55,11 +57,6 @@ export default function GearMatchList({ fit, units, focus, deskFootprint }: {
       {matches.length === 0 && <p className="panel empty-state">No products in this category meet the current dimensions in our catalog.</p>}
       <div className="gear-grid">
         {matches.map(({ item, reasons }) => {
-          const affiliate = getAffiliateLink(item.affiliateKey);
-          const affiliateUrl = affiliate && new URL(affiliate.url);
-          const activeAffiliate = affiliateUrl?.protocol === "https:" &&
-            !["example.com", "example.org", "example.net"].some((domain) =>
-              affiliateUrl.hostname === domain || affiliateUrl.hostname.endsWith(`.${domain}`));
           const dimensions = [
             ["Width × depth", `${length(item.widthInches)} × ${length(item.depthInches)}`],
             ["Seat height", range(item.minSeatHeight, item.maxSeatHeight)],
@@ -81,12 +78,7 @@ export default function GearMatchList({ fit, units, focus, deskFootprint }: {
               </dl>
               <h4>Why it fits your specs</h4>
               <ul>{reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul>
-              <div className="gear-link">
-                <span className="affiliate-badge">{activeAffiliate ? affiliate?.disclosureLabel : "Affiliate link pending"}</span>
-                {activeAffiliate
-                  ? <a href={affiliate?.url} rel="sponsored noopener noreferrer" target="_blank">Visit {affiliate?.merchant}</a>
-                  : <a href={item.sources[0]} rel="noopener noreferrer" target="_blank">View manufacturer specs</a>}
-              </div>
+              <GearProductLink destination={getGearDestination(item.affiliateKey, item.sources[0])} />
             </article>
           );
         })}

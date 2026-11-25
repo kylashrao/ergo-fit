@@ -1,62 +1,154 @@
 {
-  "aeron-a": {
-    "url": "https://example.com/affiliate/aeron-a",
+  "herman_miller": {
     "merchant": "Herman Miller",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
+    "status": "restricted_check",
+    "tags": [
+      "chair",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {
+      "aeron-a": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/specs/",
+        "utmParams": {}
+      },
+      "aeron-b": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/specs/",
+        "utmParams": {}
+      },
+      "aeron-c": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/specs/",
+        "utmParams": {}
+      },
+      "sayl": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.hermanmiller.com/content/dam/hermanmiller/documents/pricing/PB_SYL.pdf",
+        "utmParams": {}
+      }
+    }
   },
-  "aeron-b": {
-    "url": "https://example.com/affiliate/aeron-b",
-    "merchant": "Herman Miller",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "aeron-c": {
-    "url": "https://example.com/affiliate/aeron-c",
-    "merchant": "Herman Miller",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "sayl": {
-    "url": "https://example.com/affiliate/sayl",
-    "merchant": "Herman Miller",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "leap": {
-    "url": "https://example.com/affiliate/leap",
+  "steelcase": {
     "merchant": "Steelcase",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
+    "status": "pending_application",
+    "tags": [
+      "chair",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {
+      "leap": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.steelcase.com/content/uploads/2024/02/Leap-Spec-Guide-1.pdf",
+        "utmParams": {}
+      },
+      "series-1": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.steelcase.com/content/uploads/2024/02/Series-1-Spec-Guide.pdf",
+        "utmParams": {}
+      }
+    }
   },
-  "series-1": {
-    "url": "https://example.com/affiliate/series-1",
-    "merchant": "Steelcase",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "uplift-commercial-42x24": {
-    "url": "https://example.com/affiliate/uplift-commercial-42x24",
+  "uplift_desk": {
     "merchant": "UPLIFT Desk",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
+    "status": "pending_application",
+    "tags": [
+      "standing-desk",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {
+      "uplift-commercial-42x24": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "utmParams": {}
+      },
+      "uplift-commercial-48x24": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "utmParams": {}
+      },
+      "uplift-commercial-48x30": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "utmParams": {}
+      },
+      "uplift-standard-60x30": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "utmParams": {}
+      }
+    }
   },
-  "uplift-commercial-48x24": {
-    "url": "https://example.com/affiliate/uplift-commercial-48x24",
-    "merchant": "UPLIFT Desk",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "uplift-commercial-48x30": {
-    "url": "https://example.com/affiliate/uplift-commercial-48x30",
-    "merchant": "UPLIFT Desk",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "uplift-standard-60x30": {
-    "url": "https://example.com/affiliate/uplift-standard-60x30",
-    "merchant": "UPLIFT Desk",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
-  },
-  "ergotron-lx": {
-    "url": "https://example.com/affiliate/ergotron-lx",
+  "ergotron": {
     "merchant": "Ergotron",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
+    "status": "pending_application",
+    "tags": [
+      "monitor-arm",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {
+      "ergotron-lx": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://media.ergotron.com/reserved/resources/dim2-056-orig.pdf",
+        "utmParams": {}
+      }
+    }
   },
-  "kensington-solemate-plus": {
-    "url": "https://example.com/affiliate/kensington-solemate-plus",
+  "kensington": {
     "merchant": "Kensington",
-    "disclosureLabel": "We may earn a commission if you buy through this link."
+    "status": "pending_application",
+    "tags": [
+      "footrest",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {
+      "kensington-solemate-plus": {
+        "trackingUrl": null,
+        "fallbackUrl": "https://www.kensington.com/cs-cz/p/produkty/ergonomie/op%C4%9Brky-nohou-a-podp%C4%9Bry-zad/op%C4%9Brka-nohou-smartfit-solemate-plus/",
+        "utmParams": {}
+      }
+    }
+  },
+  "cj_affiliate": {
+    "merchant": "CJ Affiliate",
+    "status": "pending_application",
+    "tags": [],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {}
+  },
+  "flexispot": {
+    "merchant": "FlexiSpot",
+    "status": "pending_application",
+    "tags": [
+      "standing-desk",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {}
+  },
+  "amazon_associates": {
+    "merchant": "Amazon Associates",
+    "status": "pending_application",
+    "tags": [
+      "chair",
+      "standing-desk",
+      "monitor-arm",
+      "footrest",
+      "height-fit",
+      "room-fit"
+    ],
+    "disclosureText": "We may earn a commission if you buy through this link.",
+    "products": {}
   }
 }

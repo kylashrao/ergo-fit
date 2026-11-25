@@ -1,5 +1,4 @@
 import gearData from "../../data/gear-catalog.json" with { type: "json" };
-import affiliateLinks from "../../data/affiliate-links.json" with { type: "json" };
 import { REAR_CHAIR_CLEARANCE_INCHES, type ErgoFit } from "./ergoMath.ts";
 
 interface GearItem {
@@ -31,10 +30,6 @@ type GearMatch = { item: GearItem; score: number; reasons: string[] };
 
 function covers(target: number, min?: number | null, max?: number | null) {
   return min != null && max != null && min <= target && target <= max;
-}
-
-export function getAffiliateLink(key: string) {
-  return Object.hasOwn(affiliateLinks, key) ? affiliateLinks[key as keyof typeof affiliateLinks] : undefined;
 }
 
 /** Returns dimensional matches. Mount compatibility and under-desk clearance require setup details. */

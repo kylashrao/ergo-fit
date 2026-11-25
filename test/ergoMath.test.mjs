@@ -7,7 +7,7 @@ import {
   inchesToCm,
   inchesToFeetAndInches,
 } from "../src/lib/ergoMath.ts";
-import { getAffiliateLink, matchGear } from "../src/lib/catalog.ts";
+import { matchGear } from "../src/lib/catalog.ts";
 import catalog from "../data/gear-catalog.json" with { type: "json" };
 
 const profile = (heightInches, overrides = {}) =>
@@ -103,17 +103,12 @@ test("clamping, conversion, missing room dimensions and invalid inputs", () => {
   assert.throws(() => profile(69, { monitorInches: 0 }), RangeError);
 });
 
-test("catalog has twelve sourced products with unique centralized placeholder links", () => {
+test("catalog has twelve sourced products with unique product keys", () => {
   assert.equal(catalog.length, 12);
   assert.equal(new Set(catalog.map(({ affiliateKey }) => affiliateKey)).size, 12);
   for (const item of catalog) {
     assert.ok(item.sources.length && item.widthInches > 0 && item.depthInches > 0);
-    const link = getAffiliateLink(item.affiliateKey);
-    assert.equal(new URL(link.url).hostname, "example.com");
-    assert.ok(link.merchant);
-    assert.match(link.disclosureLabel, /commission/);
   }
-  assert.equal(getAffiliateLink("constructor"), undefined);
   const fit = profile(69, { wearsShoes: false });
   assert.equal(matchGear(fit, "footrest")[0].item.affiliateKey, "kensington-solemate-plus");
   assert.deepEqual(matchGear(fit), matchGear(fit));
