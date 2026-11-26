@@ -7,6 +7,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import ts from "typescript";
 import catalog from "../data/gear-catalog.json" with { type: "json" };
 import programs from "../data/affiliate-links.json" with { type: "json" };
+import * as affiliateLinks from "../src/lib/affiliate-links.ts";
 import { getGearDestination, programStatuses, resolveProductLink, safeHttpsUrl } from "../src/lib/affiliate-links.ts";
 
 const filename = new URL("../data/affiliate-links.json", import.meta.url);
@@ -81,18 +82,40 @@ test("approved URLs keep partner parameters and add only explicitly configured m
   assert.equal(destination.href, trackingUrl.replace("#details", "&utm_medium=affiliate#details"));
 });
 
-test("rendered affiliate anchors have a nearby commission disclosure and sponsored rel", () => {
-  const component = new URL("../src/components/GearProductLink.tsx", import.meta.url);
+function loadComponent(name, dependencies = {}) {
+  const component = new URL(`../src/components/${name}.tsx`, import.meta.url);
   const { outputText } = ts.transpileModule(readFileSync(component, "utf8"), {
     fileName: component.pathname,
     compilerOptions: { jsx: ts.JsxEmit.ReactJSX, module: ts.ModuleKind.CommonJS },
   });
   const exports = {};
-  new Function("require", "exports", outputText)(createRequire(import.meta.url), exports);
-  const render = (destination) => renderToStaticMarkup(createElement(exports.default, { destination }));
+  const require = createRequire(import.meta.url);
+  new Function("require", "exports", outputText)((id) => dependencies[id] ?? require(id), exports);
+  return exports;
+}
+
+test("standing desk offers use the exact Impact URL and only one Amazon tag", () => {
+  const { buildAmazonAffiliateUrl, standingDeskOffers } = affiliateLinks;
+  assert.equal(standingDeskOffers[0].href, "https://flexispot.sjv.io/DWoonq");
+  const search = new URL(standingDeskOffers[1].href);
+  assert.equal(search.searchParams.get("k"), "standing desk");
+  assert.deepEqual(search.searchParams.getAll("tag"), ["ergofit-20"]);
+
+  const product = new URL(buildAmazonAffiliateUrl("https://www.amazon.com/dp/item?ref=abc&tag=one&Tag=two#details"));
+  assert.deepEqual([...product.searchParams], [["ref", "abc"], ["tag", "ergofit-20"]]);
+  assert.equal(product.hash, "#details");
+  assert.equal(buildAmazonAffiliateUrl("https://amazon.com.merchant-fixture.example.edu/"), undefined);
+});
+
+test("rendered affiliate anchors have a nearby commission disclosure and sponsored rel", () => {
+  const { default: GearProductLink } = loadComponent("GearProductLink", {
+    "../lib/affiliate-links": affiliateLinks,
+    "./AffiliateDisclosure": loadComponent("AffiliateDisclosure"),
+  });
+  const render = (destination) => renderToStaticMarkup(createElement(GearProductLink, { destination }));
 
   const paid = render(resolveProductLink(approved, product));
-  assert.match(paid, /commission[^<]*<\/span><a [^>]*rel="sponsored noopener noreferrer"[^>]*target="_blank"/);
+  assert.match(paid, /commission at no extra cost to you\. As an Amazon Associate I earn from qualifying purchases\.<\/p><a [^>]*rel="sponsored nofollow noopener noreferrer"[^>]*target="_blank"/);
   const reference = render(resolveProductLink({ ...approved, status: "pending_approval" }, product));
   assert.match(reference, /rel="noopener noreferrer" target="_blank">View manufacturer specs/);
   assert.doesNotMatch(reference, /sponsored|commission|merchant-fixture/);

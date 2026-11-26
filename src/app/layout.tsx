@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import SiteHeader from "@/components/SiteHeader";
 import { trustPages } from "@/lib/editorial";
 import { adsenseClient } from "@/lib/siteConfig";
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 {trustPages.map(({ href, label }) => <li key={href}><Link href={href}>{label}</Link></li>)}
               </ul>
             </nav>
+            <AffiliateDisclosure variant="footer" />
           </div>
         </footer>
       </body>

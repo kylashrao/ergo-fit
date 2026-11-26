@@ -1,4 +1,5 @@
-import type { GearDestination } from "../lib/affiliate-links";
+import { AFFILIATE_LINK_REL, type GearDestination } from "../lib/affiliate-links";
+import AffiliateDisclosure from "./AffiliateDisclosure";
 
 export default function GearProductLink({ destination }: { destination?: GearDestination }) {
   if (!destination) return null;
@@ -7,8 +8,8 @@ export default function GearProductLink({ destination }: { destination?: GearDes
     <div className="gear-link">
       {destination.kind === "affiliate" ? (
         <>
-          <span className="affiliate-badge">{destination.disclosureText}</span>
-          <a href={destination.href} rel="sponsored noopener noreferrer" target="_blank">Visit {destination.merchant}</a>
+          <AffiliateDisclosure />
+          <a href={destination.href} rel={AFFILIATE_LINK_REL} target="_blank">Visit {destination.merchant}</a>
         </>
       ) : (
         <a href={destination.href} rel="noopener noreferrer" target="_blank">View manufacturer specs</a>

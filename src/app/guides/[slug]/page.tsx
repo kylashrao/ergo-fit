@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import EditorialPage, { EditorialLinks } from "@/components/EditorialPage";
 import { guides, type SlugPageProps } from "@/lib/editorial";
 import { pageMetadata, siteUrl } from "@/lib/siteSeo";
@@ -80,7 +81,7 @@ export default async function GuidePage({ params }: SlugPageProps) {
           <EditorialLinks title="Related calculators and setups" links={guide.links} />
           <div className="disclosures">
             <p>These estimates are educational workstation sizing guidance, not medical advice.</p>
-            <p>We may earn a commission on purchases made through affiliate links on matched gear pages.</p>
+            <AffiliateDisclosure variant="banner" />
           </div>
         </aside>
       </div>

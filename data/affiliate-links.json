@@ -128,6 +128,7 @@
   },
   "flexispot": {
     "merchant": "FlexiSpot",
+    "impactUrl": "https://flexispot.sjv.io/DWoonq",
     "status": "pending_application",
     "tags": [
       "standing-desk",
@@ -139,6 +140,8 @@
   },
   "amazon_associates": {
     "merchant": "Amazon Associates",
+    "associateTag": "ergofit-20",
+    "standingDesksUrl": "https://www.amazon.com/s?k=standing+desk",
     "status": "pending_application",
     "tags": [
       "chair",

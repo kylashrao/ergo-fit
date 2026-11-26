@@ -135,7 +135,10 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 .gear-card h4 { font-size: .95rem; font-weight: 730; }
 .gear-card ul { list-style: disc; padding-inline-start: 1.15rem; display: grid; gap: .24rem; color: var(--muted); font-size: .9rem; margin: .35rem 0 .85rem; }
 .gear-link { display: grid; justify-items: start; gap: .4rem; padding-top: .65rem; border-top: 1px solid var(--line); margin-top: auto; }
-.affiliate-badge { background: var(--lavender); padding: .19rem .42rem; border-radius: .3rem; color: var(--purple-dark); font-weight: 650; font-size: .875rem; }
+.affiliate-disclosure--banner, .affiliate-disclosure--inline { color: var(--purple-dark); }
+.affiliate-disclosure--inline { font-size: .875rem; }
+.affiliate-disclosure--footer { flex-basis: 100%; margin-top: .45rem; }
+.gear-offer-links { display: flex; flex-wrap: wrap; gap: .35rem 1rem; font-weight: 700; }
 .gear-link a { color: var(--purple-dark); text-decoration: underline; text-underline-offset: .16em; font-size: .9rem; font-weight: 700; }
 .empty-state { padding: 1rem; color: var(--muted); }
 .ad-slot { position: relative; height: 250px; min-width: 0; overflow: hidden; }

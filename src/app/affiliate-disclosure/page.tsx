@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import TrustPage, { ContactPageLink } from "@/components/TrustPage";
 import { pageMetadata } from "@/lib/siteSeo";
 
@@ -7,9 +8,10 @@ const description = "We may earn a commission when you buy through an affiliate 
 
 export const metadata = pageMetadata(title, description, "/affiliate-disclosure");
 
-export default function AffiliateDisclosure() {
+export default function AffiliateDisclosurePage() {
   return (
     <TrustPage title={title} description={description}>
+      <AffiliateDisclosure variant="banner" />
       <section>
         <h2>How affiliate links work</h2>
         <p>We may use affiliate links to furniture and workspace gear retailers and manufacturers. These links may appear for products such as chairs, standing desks, monitor arms, and footrests. A merchant or affiliate network may use a referral code, cookie, or similar technology to credit a qualifying purchase to ergo-fit. Purchases, prices, returns, and warranties are handled by the seller.</p>

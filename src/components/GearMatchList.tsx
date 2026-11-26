@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { getGearDestination } from "@/lib/affiliate-links";
+import { AFFILIATE_LINK_REL, getGearDestination, standingDeskOffers } from "@/lib/affiliate-links";
 import { matchGear } from "@/lib/catalog";
 import GearProductLink from "./GearProductLink";
+import AffiliateDisclosure from "./AffiliateDisclosure";
 import type { ErgoFit } from "@/lib/ergoMath";
 import { formatLength, type UnitSystem } from "@/lib/setupDisplay";
 
@@ -33,9 +34,9 @@ export default function GearMatchList({ fit, units, focus, deskFootprint }: {
   const range = (min?: number | null, max?: number | null) =>
     min == null || max == null ? undefined : min === max ? length(min) : `${length(min)}–${length(max)}`;
   const scope = focus === "desk" ? ["standing-desk", "monitor-arm"] : focus === "chair" ? ["chair", "footrest"] : filters[0].categories;
+  const visibleCategories = scope.filter((category) => filters[filter].categories.includes(category));
   const matches = matchGear(fit, undefined, length).filter(({ item }) =>
-    scope.includes(item.category) &&
-    filters[filter].categories.includes(item.category) &&
+    visibleCategories.includes(item.category) &&
     (item.category !== "standing-desk" || !deskFootprint ||
       (item.widthInches <= deskFootprint.width && item.depthInches <= deskFootprint.depth))
   );
@@ -50,7 +51,14 @@ export default function GearMatchList({ fit, units, focus, deskFootprint }: {
         {filters.map(({ label, categories }, index) => categories.some((category) => scope.includes(category)) && <button key={label} type="button" aria-pressed={filter === index} onClick={() => setFilter(index)}>{label}</button>)}
       </div>
       <div className="disclosures">
-        <p><strong>Affiliate disclosure.</strong> We may earn a commission on purchases made through affiliate links. <Link href="/affiliate-disclosure">Affiliate disclosure details</Link>.</p>
+        <AffiliateDisclosure variant="banner" />
+        {visibleCategories.includes("standing-desk") && (
+          <ul className="gear-offer-links" aria-label="Standing desk shopping links">
+            {standingDeskOffers.map(({ label, href }) => href && (
+              <li key={label}><a href={href} rel={AFFILIATE_LINK_REL} target="_blank">{label}</a></li>
+            ))}
+          </ul>
+        )}
         <p><strong>Ergonomic disclaimer.</strong> These estimates are educational workstation sizing guidance, not medical advice. Check the configuration and dimensions before buying. <Link href="/legal-disclaimer">Sizing disclaimer</Link>.</p>
       </div>
       <p className="match-count" role="status">{matches.length} {matches.length === 1 ? "match" : "matches"}</p>

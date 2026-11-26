@@ -1,5 +1,28 @@
 import programs from "../../data/affiliate-links.json" with { type: "json" };
 
+export const AMAZON_ASSOCIATE_TAG = programs.amazon_associates.associateTag;
+export const FLEXISPOT_AFFILIATE_URL = programs.flexispot.impactUrl;
+export const AFFILIATE_LINK_REL = "sponsored nofollow noopener noreferrer";
+
+export interface AffiliateOffer {
+  network: "Impact" | "Amazon Associates";
+  label: string;
+  href: string | undefined;
+}
+
+export const standingDeskOffers = [
+  {
+    network: "Impact",
+    label: "Browse desks at FlexiSpot",
+    href: safeHttpsUrl(FLEXISPOT_AFFILIATE_URL) ? FLEXISPOT_AFFILIATE_URL : undefined,
+  },
+  {
+    network: "Amazon Associates",
+    label: "Search standing desks on Amazon",
+    href: buildAmazonAffiliateUrl(programs.amazon_associates.standingDesksUrl),
+  },
+] as const satisfies readonly AffiliateOffer[];
+
 export const programStatuses = ["pending_application", "pending_approval", "approved", "restricted_check"] as const;
 type ProgramStatus = (typeof programStatuses)[number];
 
@@ -37,6 +60,17 @@ export function safeHttpsUrl(value: string | null | undefined): URL | undefined 
       /(^|\.)(example\.(com|net|org)|example|invalid|test|localhost|local)$/.test(host)) return;
   if (/placeholder|replace[_-]?me|your[_-]?(?:affiliate|tracking|partner|property|publisher|tag|id)/i.test(decoded)) return;
   return url;
+}
+
+export function buildAmazonAffiliateUrl(value: string): string | undefined {
+  const url = safeHttpsUrl(value);
+  if (!url || !["amazon.com", "www.amazon.com"].includes(url.hostname) || url.port) return;
+
+  for (const key of new Set(url.searchParams.keys())) {
+    if (key.toLowerCase() === "tag") url.searchParams.delete(key);
+  }
+  url.searchParams.set("tag", AMAZON_ASSOCIATE_TAG);
+  return url.href;
 }
 
 export function resolveProductLink(
