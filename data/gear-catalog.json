@@ -68,7 +68,7 @@
     "priceTier": "premium",
     "bestFor": "Low seat height with adjustable depth",
     "sources": [
-      "https://www.hermanmiller.com/content/dam/hermanmiller/documents/pricing/PB_SYL.pdf"
+      "https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/product-details/"
     ],
     "minSeatHeight": 15,
     "maxSeatHeight": 19,
@@ -87,7 +87,7 @@
     "priceTier": "premium",
     "bestFor": "Broad seat-depth adjustment",
     "sources": [
-      "https://www.steelcase.com/content/uploads/2024/02/Leap-Spec-Guide-1.pdf"
+      "https://www.steelcase.com/products/office-chairs/leap/"
     ],
     "minSeatHeight": 15.5,
     "maxSeatHeight": 20.5,
@@ -106,7 +106,7 @@
     "priceTier": "midrange",
     "bestFor": "Compact adjustable seating",
     "sources": [
-      "https://www.steelcase.com/content/uploads/2024/02/Series-1-Spec-Guide.pdf"
+      "https://www.steelcase.com/products/office-chairs/steelcase-series-1/"
     ],
     "minSeatHeight": 16.5,
     "maxSeatHeight": 21.5,
@@ -125,8 +125,7 @@
     "priceTier": "midrange",
     "bestFor": "Narrow rooms with a clamp-mounted display",
     "sources": [
-      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
-      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+      "https://www.upliftdesk.com/product-comparison-charts/"
     ],
     "minSeatHeight": null,
     "maxSeatHeight": null,
@@ -145,8 +144,7 @@
     "priceTier": "midrange",
     "bestFor": "Shallow rooms with a clamp-mounted display",
     "sources": [
-      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
-      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+      "https://www.upliftdesk.com/product-comparison-charts/"
     ],
     "minSeatHeight": null,
     "maxSeatHeight": null,
@@ -165,8 +163,7 @@
     "priceTier": "midrange",
     "bestFor": "Lower seated targets with a deep work surface",
     "sources": [
-      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
-      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+      "https://www.upliftdesk.com/product-comparison-charts/"
     ],
     "minSeatHeight": null,
     "maxSeatHeight": null,
@@ -185,8 +182,7 @@
     "priceTier": "midrange",
     "bestFor": "Higher standing targets and wide work surfaces",
     "sources": [
-      "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
-      "https://checkout.upliftdesk.com/test-uplift-2-leg-standing-desk-frame/"
+      "https://www.upliftdesk.com/product-comparison-charts/"
     ],
     "minSeatHeight": null,
     "maxSeatHeight": null,
@@ -205,8 +201,7 @@
     "priceTier": "midrange",
     "bestFor": "Reclaiming desk surface on compact setups",
     "sources": [
-      "https://media.ergotron.com/reserved/resources/dim2-056-orig.pdf",
-      "https://media.ergotron.com/reserved/resources/05-056-ea-orig.pdf"
+      "https://media.ergotron.com/reserved/resources/dim2-056-orig.pdf"
     ],
     "minSeatHeight": null,
     "maxSeatHeight": null,

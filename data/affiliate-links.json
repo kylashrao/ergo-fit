@@ -26,7 +26,7 @@
       },
       "sayl": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.hermanmiller.com/content/dam/hermanmiller/documents/pricing/PB_SYL.pdf",
+        "fallbackUrl": "https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/product-details/",
         "utmParams": {}
       }
     }
@@ -43,12 +43,12 @@
     "products": {
       "leap": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.steelcase.com/content/uploads/2024/02/Leap-Spec-Guide-1.pdf",
+        "fallbackUrl": "https://www.steelcase.com/products/office-chairs/leap/",
         "utmParams": {}
       },
       "series-1": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.steelcase.com/content/uploads/2024/02/Series-1-Spec-Guide.pdf",
+        "fallbackUrl": "https://www.steelcase.com/products/office-chairs/steelcase-series-1/",
         "utmParams": {}
       }
     }
@@ -65,22 +65,22 @@
     "products": {
       "uplift-commercial-42x24": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "fallbackUrl": "https://www.upliftdesk.com/product-comparison-charts/",
         "utmParams": {}
       },
       "uplift-commercial-48x24": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "fallbackUrl": "https://www.upliftdesk.com/product-comparison-charts/",
         "utmParams": {}
       },
       "uplift-commercial-48x30": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "fallbackUrl": "https://www.upliftdesk.com/product-comparison-charts/",
         "utmParams": {}
       },
       "uplift-standard-60x30": {
         "trackingUrl": null,
-        "fallbackUrl": "https://www.content.upliftdesk.com/content/pdfs/comparison-charts/v2-desk-frame-comparison-chart.pdf",
+        "fallbackUrl": "https://www.upliftdesk.com/product-comparison-charts/",
         "utmParams": {}
       }
     }
